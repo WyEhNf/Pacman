@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pacman-ai"
+version = "2.0.0"
+description = "Pac-Man AI simulator — PPO + CNN on vectorized NumPy engine"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0",
+    "numpy>=1.24",
+    "pygame>=2.5",
+    "pyyaml>=6.0",
+    "tensorboard>=2.14",
+    "dash>=2.14",
+    "plotly>=5.18",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-cov>=4.1"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "pacman*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

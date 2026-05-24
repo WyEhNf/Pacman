@@ -1,0 +1,50 @@
+[17:49:22] Loading DAgger R1 ensemble...
+[17:49:23] 5 models loaded.
+[17:49:42] [BASELINE] 50eps: score=389  win=8.0%  food=68%
+[17:49:58]   Ghost0.5: score=421  win=8.0%  food=68%
+[17:50:15]   Ghost0.8: score=469  win=8.0%  food=73%
+[17:50:15] 
+--- Iteration 1 ---
+[17:50:15] Collecting 200 episodes...
+[17:51:38]   Collected: avg_score=526  wins=30/200  pos_ret_eps=179  total_trans=25635
+[17:51:38] Training (lr=1e-05, batch=256, epochs=3)...
+[17:51:43]   Losses: ['0.3618', '0.3873', '0.4021', '0.3852', '0.3551']
+[17:52:05]   Eval50: score=503  win=20.0%  food=72%
+[17:52:05]   Best saved: 503
+[17:52:05] 
+--- Iteration 2 ---
+[17:52:05] Collecting 200 episodes...
+[17:53:32]   Collected: avg_score=546  wins=31/200  pos_ret_eps=183  total_trans=27696
+[17:53:32] Training (lr=1e-05, batch=256, epochs=3)...
+[17:53:36]   Losses: ['0.2695', '0.3081', '0.3012', '0.2834', '0.2702']
+[17:53:59]   Eval50: score=438  win=12.0%  food=70%
+[17:53:59] 
+--- Iteration 3 ---
+[17:54:00] Collecting 200 episodes...
+[17:55:21]   Collected: avg_score=476  wins=17/200  pos_ret_eps=182  total_trans=25537
+[17:55:21] Training (lr=1e-05, batch=256, epochs=3)...
+[17:55:24]   Losses: ['0.2029', '0.2390', '0.2323', '0.2478', '0.2082']
+[17:55:48]   Eval50: score=611  win=18.0%  food=80%
+[17:55:48]   Best saved: 611
+[17:55:48] 
+--- Iteration 4 ---
+[17:55:48] Collecting 200 episodes...
+[17:57:12]   Collected: avg_score=459  wins=15/200  pos_ret_eps=178  total_trans=26456
+[17:57:12] Training (lr=1e-05, batch=256, epochs=3)...
+[17:57:15]   Losses: ['0.1780', '0.2088', '0.2185', '0.2091', '0.1995']
+[17:57:38]   Eval50: score=625  win=18.0%  food=75%
+[17:57:38]   Best saved: 625
+[17:57:38] 
+--- Iteration 5 ---
+[17:57:38] Collecting 200 episodes...
+[17:59:05]   Collected: avg_score=553  wins=23/200  pos_ret_eps=187  total_trans=27254
+[17:59:05] Training (lr=1e-05, batch=256, epochs=3)...
+[17:59:08]   Losses: ['0.1551', '0.1936', '0.1908', '0.1925', '0.1664']
+[17:59:31]   Eval50: score=558  win=10.0%  food=76%
+[17:59:31] 
+=======================================================
+[17:59:31] FINAL BENCHMARK
+[17:59:31] =======================================================
+[18:00:09]   Ghost 0.5: score=481  win=6.0%  food=75%
+[18:00:43]   Ghost 0.8: score=352  win=0.0%  food=67%
+[18:00:43] Done. 2026-05-23 18:00:43

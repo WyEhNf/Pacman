@@ -1,0 +1,15 @@
+
+=== Self-Play Started 2026-05-22 11:54:21.551107 ===
+Base data: 570 eps, Initial: DAgger R1
+R1: sp_eps=100 avg=511 wins=11 models_val_acc=0.000
+R2: sp_eps=100 avg=634 wins=20 models_val_acc=0.000
+R3: sp_eps=100 avg=596 wins=13 models_val_acc=0.000
+R4: sp_eps=100 avg=625 wins=20 models_val_acc=0.000
+R5: sp_eps=100 avg=560 wins=12 models_val_acc=0.000
+R6: sp_eps=100 avg=544 wins=13 models_val_acc=0.000
+R7: sp_eps=100 avg=599 wins=16 models_val_acc=0.000
+
+=== Self-Play Started 2026-05-22 16:38:28.914506 ===
+Base data: 570 eps, Initial: DAgger R1
+R1: sp_eps=100 avg=536 wins=11 models_val_acc=0.000
+R2: sp_eps=100 avg=624 wins=20 models_val_acc=0.000

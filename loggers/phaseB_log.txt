@@ -1,0 +1,10 @@
+
+============================================================
+Stage: S1_Warmup  Steps: 50000  LR: 3e-05  DangerW: 1.0
+Epsilon: 0.3->0.05  TargetUpdate: 2000
+============================================================
+Loaded DAgger R1 m0 as starting point.
+[INITIAL] score=516  win=0.0%  food%=75
+  [   759/50000] eps=0.263 score10=     -7 death10=1.00 food10=42% kill10=0.8 loss=39.6907 Q=3.63 |buf|=   759 eta=494s
+  [  1656/50000] eps=0.220 score10=     33 death10=1.00 food10=48% kill10=0.7 loss=61.8172 Q=5.85 |buf|=  1656 eta=567s
+  [  2899/50000] eps=0.166 score10=    116 death10=1.00 food10=54% kill10=0.9 loss=96.6602 Q=10.22 |buf|=  2899 eta=633s

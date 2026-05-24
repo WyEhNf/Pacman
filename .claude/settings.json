@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Write",
+      "Edit",
+      "Bash(C:\\\\Users\\\\admin\\\\miniconda3\\\\envs\\\\pacman\\\\python.exe \"e:\\\\Pacman\\\\verify_ppo.py\")",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe \"e:/Pacman/verify_ppo.py\")",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe \"e:/Pacman/verify_phase2.py\")",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -c \"import torch; from src.model.world_model import WorldModel; wm = WorldModel\\(256, 5\\); s=torch.randn\\(4,256\\); a=torch.zeros\\(4,5\\); a[:,0]=1; ns,r,d=wm\\(s,a\\); print\\(f'state:{ns.shape} reward:{r.shape} done:{d.shape}'\\); loss,s = wm.loss\\(s,a,ns,torch.zeros\\(4,1\\),torch.zeros\\(4,1\\)\\); print\\(f'loss:{loss.item\\(\\):.4f}'\\)\")",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u \"e:/Pacman/scripts/train_alphazero_dqn.py\" --iterations 15 --episodes_per_iter 2 --mcts_sims 500 --lr 5e-4)",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u \"e:/Pacman/scripts/train_alphazero_dqn.py\" --iterations 20 --episodes_per_iter 5 --mcts_sims 200 --lr 5e-4)",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -c \"f=open\\('C:/Users/admin/AppData/Local/Temp/claude/e--Pacman/3dfee03c-e5c3-45c5-a5da-0b8fba4a42c3/tasks/boujd34yb.output'\\); lines=[l.rstrip\\(\\) for l in f]; [print\\(l\\) for l in lines]\")",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u \"e:/Pacman/scripts/warmstart_dqn.py\")",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u -c ' *)",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u \"e:/Pacman/scripts/train_alphazero_dqn.py\" --iterations 1 --episodes_per_iter 0 --mcts_sims 1)",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -c ' *)",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -c \"import torch, sys; sys.path.insert\\(0,'e:/Pacman'\\); from scripts.train_alphazero_dqn import DualHeadDQN; m=DualHeadDQN\\(\\); m.load_state_dict\\(torch.load\\('e:/Pacman/checkpoints/dqn_warmstart.pt'\\)\\); print\\('OK'\\); q,_=m\\(torch.zeros\\(1,448\\)\\); print\\(f'Q:{q[0].tolist\\(\\)}'\\)\")",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u \"e:/Pacman/scripts/eval_dqn.py\")",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u \"e:/Pacman/scripts/train_alphazero_dqn.py\" --iterations 15 --episodes_per_iter 5 --mcts_sims 200 --lr 5e-4 --warmstart checkpoints/dqn_warmstart.pt)",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u \"e:/Pacman/scripts/train_dqn_selfplay.py\" --episodes 200)",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -c \"lines=open\\('C:/Users/admin/AppData/Local/Temp/claude/e--Pacman/3dfee03c-e5c3-45c5-a5da-0b8fba4a42c3/tasks/b8g6fdirj.output'\\).readlines\\(\\); [print\\(l.rstrip\\(\\)\\) for l in lines]\")",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u autograder.py -q q5 --no-graphics)",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u \"e:/Pacman/scripts/run_collection.py\" --episodes 9999 --output data/w1)",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u \"e:/Pacman/scripts/run_collection.py\" --episodes 9999 --output data/w2)",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u \"e:/Pacman/scripts/run_collection.py\" --episodes 9999 --output data/w3)",
+      "Bash(/c/Users/admin/miniconda3/envs/pacman/python.exe -u \"e:/Pacman/scripts/run_collection.py\" --episodes 9999 --output data/w4)",
+      "Bash(tasklist)",
+      "Bash(wmic process *)"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+# Expert trajectory data (large .npz files)
+agents/experts_data/
+
+# PPO training checkpoints and runs
+agents/ppo/runs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

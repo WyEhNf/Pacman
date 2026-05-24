@@ -1,0 +1,72 @@
+game:
+  lives: 3
+  max_steps: 3000
+  frightened_duration: 36
+  mode_schedule: [42, 120, 42, 120, 30, 120, 30, -1]
+  ghost_exit_pellets: [0, 0, 30, 60]
+  ghost_exit_timer: [0, 0, 120, 240]
+  fruit:
+    spawn_pellets: [70, 170]
+    duration: 60
+    score: 100
+
+env:
+  num_envs: 128
+  observation_channels: 8
+  num_scalar_features: 5
+  frame_stack: 4
+
+network:
+  cnn_channels: [64, 128, 128]
+  cnn_kernels: [3, 3, 3]
+  cnn_strides: [1, 2, 2]
+  shared_hidden: 512
+  head_hidden: 256
+
+rnd:
+  enabled: true
+  hidden_size: 256
+  output_size: 128
+  learning_rate: 1.0e-4
+  intrinsic_coef: 0.1
+  update_proportion: 0.25
+
+ppo:
+  rollout_steps: 128
+  num_epochs: 4
+  minibatch_size: 2048
+  learning_rate: 2.5e-4
+  lr_anneal: true
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_epsilon: 0.2
+  value_loss_coef: 0.5
+  entropy_coef_start: 0.15
+  entropy_coef_end: 0.01
+  entropy_anneal_fraction: 0.7
+  max_grad_norm: 0.5
+  reward_clip: 10.0
+
+curriculum:
+  phase_thresholds: [0, 800, 3000]
+  difficulties: [0, 1, 2]
+
+rewards:
+  eat_pellet: 1.0
+  eat_power_pellet: 2.0
+  eat_ghost: [5.0, 10.0, 15.0, 20.0]
+  eat_fruit: 3.0
+  clear_level: 50.0
+  death: -10.0
+  game_over: -25.0
+  ghost_proximity: -0.3
+  time_step: -0.01
+
+training:
+  total_updates: 8000
+  eval_every: 50
+  eval_episodes: 20
+  checkpoint_every: 100
+  log_every: 1
+
+device: auto

@@ -1,0 +1,44 @@
+# Pacman-AI default configuration
+model:
+  state_dim: 256
+  act_dim: 5
+  d_model: 256
+  n_heads: 4
+  n_layers: 6
+  context_len: 20
+  dropout: 0.1
+
+training:
+  bc:
+    learning_rate: 0.0001
+    batch_size: 64
+    epochs: 50
+  ppo:
+    learning_rate: 0.00005
+    epsilon: 0.2
+    value_coef: 0.5
+    entropy_coef: 0.01
+    n_steps: 2048
+    n_epochs: 4
+
+mcts:
+  c_puct: 2.0
+  n_simulations: 100
+  confidence_threshold: 0.8
+
+perception:
+  vit:
+    img_size: 21
+    patch_size: 1
+    in_chans: 3
+    d_model: 256
+  gat:
+    in_dim: 32
+    hidden_dim: 64
+    out_dim: 128
+    n_layers: 3
+
+paths:
+  expert_data: "data/expert_trajectories.npz"
+  checkpoints: "checkpoints/"
+  logs: "logs/"

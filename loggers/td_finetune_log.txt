@@ -1,0 +1,7 @@
+R1: CE=0.5113 TD=2.27 Qmean=2.3
+R2: CE=0.5030 TD=2.28 Qmean=2.4 | Eval: avg=196 wins=0/10R3: CE=0.4980 TD=2.29 Qmean=2.4
+R4: CE=0.4886 TD=2.31 Qmean=2.4 | Eval: avg=438 wins=1/10R5: CE=0.4892 TD=2.33 Qmean=2.4
+R6: CE=0.4864 TD=2.37 Qmean=2.4 | Eval: avg=405 wins=1/10R7: CE=0.4821 TD=2.37 Qmean=2.5
+R8: CE=0.4814 TD=2.37 Qmean=2.5 | Eval: avg=485 wins=1/10R9: CE=0.4812 TD=2.40 Qmean=2.5
+R10: CE=0.4762 TD=2.42 Qmean=2.5 | Eval: avg=566 wins=2/10
+Final: avg=382 wins=1/20
