@@ -1,5 +1,7 @@
 # Pac-Man Deep RL Experimental Analysis
 
+It's a tiny research project based on the famous AI course Berkeley CS188. Further exploration's made as follows.
+
 A systematic experimental comparison of three deep reinforcement learning paradigms—DecisionTransformer (offline), DAgger+DQN (imitation), and PPO+GAE (on-policy)—on the classic arcade game Pac-Man.
 
 ## Project Structure
